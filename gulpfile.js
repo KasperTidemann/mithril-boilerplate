@@ -17,8 +17,6 @@ gulp.task('js', function() {
   return gulp.src([
     'vendor/js/localforage/dist/localforage.js',
     'vendor/js/mithril/mithril.js',
-    'vendor/js/moment/moment.js',
-    'vendor/js/velocity/velocity.js',
     'js/helpers/**/*.js',
     'js/models/**/*.js',
     'js/templates/**/*.js',
