@@ -22,7 +22,8 @@ gulp.task('js', function() {
     'js/templates/**/*.js',
     'js/components/*.js',
     'js/components/**/*.js',
-    'js/routes/**/*.js'])
+    'js/routes/**/*.js',
+    'js/fixtures/**/*.js'])
     /*
       Optionally, uglify at some point:
 
