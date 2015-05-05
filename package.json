@@ -1,0 +1,15 @@
+{
+  "author": "Kasper Tidemann",
+  "dependencies": {
+    "gulp": "*",
+    "gulp-concat": "*",
+    "gulp-minify-css": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*"
+  },
+  "license": "MIT",
+  "name": "mithril-boilerplate",
+  "private": true,
+  "repository": "https://github.com/KasperTidemann/mithril-boilerplate",
+  "version": "0.0.1"
+}
