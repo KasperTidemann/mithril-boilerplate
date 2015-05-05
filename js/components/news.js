@@ -1,9 +1,9 @@
 // Module:
-var root = {
+var news = {
   controller: function() {
 
     // Setup:
-    title('Root');
+    title('News');
 
   },
 
@@ -18,10 +18,8 @@ var root = {
 
       // Contents:
       m('div', [
-        m('p', 'Hello there, friend!'),
-        m('a', { onclick: route.trigger('/about') }, 'Go to About'),
-        m('p', ' or '),
-        m('a', { onclick: route.trigger('/news') }, 'Go to News')
+        m('p', 'Here are the news! Well, there are no news. But that\'s still news, it\'s just that there are no news, you know?'),
+        m('a', { onclick: route.trigger('/root') }, 'Go back')
       ])
 
     );

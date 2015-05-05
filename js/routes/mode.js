@@ -1,2 +1,2 @@
 // Mode:
-m.route.mode = 'pathname';
+m.route.mode = 'hash';

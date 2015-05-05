@@ -1,6 +1,8 @@
 // Routes:
 session.ready(function() {
   m.route(document.body, '/', {
-    '/': root
+    '/': root,
+    '/about': about,
+    '/news': news
   })
 });

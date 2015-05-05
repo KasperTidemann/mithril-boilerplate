@@ -24,3 +24,22 @@ body, html {
 
   width: 100%;
 }
+
+div.layout {
+  margin: 100px auto 0px auto;
+  max-width: 500px;
+
+  div {
+    text-align: center;
+  }
+
+  p, a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

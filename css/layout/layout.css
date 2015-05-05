@@ -18,3 +18,15 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   width: 100%; }
+
+div.layout {
+  margin: 100px auto 0px auto;
+  max-width: 500px; }
+  div.layout div {
+    text-align: center; }
+  div.layout p, div.layout a {
+    font-size: 18px;
+    line-height: 26px; }
+  div.layout a {
+    cursor: pointer;
+    text-decoration: underline; }

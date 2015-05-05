@@ -3838,11 +3838,11 @@ var layout = function(id) {
 };
 
 // Module:
-var root = {
+var about = {
   controller: function() {
 
     // Setup:
-    title('root');
+    title('About');
 
   },
 
@@ -3857,7 +3857,66 @@ var root = {
 
       // Contents:
       m('div', [
-        m('p', 'Hello there, friend!')
+        m('p', 'This is the about page. About what? Everything. Right here. In just a moment.'),
+        m('a', { onclick: route.trigger('/root') }, 'Go back')
+      ])
+
+    );
+  }
+};
+
+// Module:
+var news = {
+  controller: function() {
+
+    // Setup:
+    title('News');
+
+  },
+
+  view: function(controller) {
+    return layout(
+
+      // Id:
+      'root',
+
+      // Controller:
+      controller,
+
+      // Contents:
+      m('div', [
+        m('p', 'Here are the news! Well, there are no news. But that\'s still news, it\'s just that there are no news, you know?'),
+        m('a', { onclick: route.trigger('/root') }, 'Go back')
+      ])
+
+    );
+  }
+};
+
+// Module:
+var root = {
+  controller: function() {
+
+    // Setup:
+    title('Root');
+
+  },
+
+  view: function(controller) {
+    return layout(
+
+      // Id:
+      'root',
+
+      // Controller:
+      controller,
+
+      // Contents:
+      m('div', [
+        m('p', 'Hello there, friend!'),
+        m('a', { onclick: route.trigger('/about') }, 'Go to About'),
+        m('p', ' or '),
+        m('a', { onclick: route.trigger('/news') }, 'Go to News')
       ])
 
     );
@@ -3865,7 +3924,7 @@ var root = {
 };
 
 // Mode:
-m.route.mode = 'pathname';
+m.route.mode = 'hash';
 
 // Route:
 var route = {
@@ -3888,6 +3947,8 @@ var route = {
 // Routes:
 session.ready(function() {
   m.route(document.body, '/', {
-    '/': root
+    '/': root,
+    '/about': about,
+    '/news': news
   })
 });
